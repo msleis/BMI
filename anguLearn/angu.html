@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" ng-app="Greet">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/angular.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="app/app.js"></script>
+<script src="controllers/MainController.js"></script>
+
+
+<div ng-controller="greetController">
+    <h1 align="center">{{greet}}</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p align="center">
+
+    <button align="center" ng-click="bmi()" type="button" class="btn btn-primary btn-lg">Klikni pro výpočet tvého BMI</button>
+    </p>
+    </div>
+<table align="center" border = "1" cellpadding = "5" cellspacing = "5">
+    <tr>
+        <th>BMI</th>
+        <th>Výsledek</th>
+
+    </tr>
+    <tr>
+        <td>méně než 18,5</td>
+        <td>Podváha</td>
+
+    </tr>
+    <tr>
+        <td>18,5 až 24,9</td>
+        <td>Normální hmotnost</td>
+
+    </tr>
+    <tr>
+        <td>25 až 29,9</td>
+        <td>Nadváha</td>
+
+    </tr>
+    <tr>
+        <td>30 a více</td>
+        <td>Obezita</td>
+
+    </tr>
+
+</table>
+
+
+</body>
+</html>
